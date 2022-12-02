@@ -3,24 +3,14 @@ import java.util.Scanner;
 
 public class TaskE {
     public static void main(String[] args) {
-//        File fileInput = new File("inputE.txt");
-//        File fileOutput = new File("outputE.txt");
+
         String s1 = null;
         String s2 = null;
         int result = 0;
 
-
-        //read file and do task
-//        try (Scanner scanner = new Scanner(fileInput)) {
-//            s1 = scanner.nextLine();
-//            s2 = scanner.nextLine();
-//        } catch (FileNotFoundException e){
-//            e.printStackTrace();
-//        }
         Scanner scanner = new Scanner(System.in);
         s1 = scanner.nextLine();
         s2 = scanner.nextLine();
-
 
         //body
         if (s2.length() != s1.length()) {
@@ -44,13 +34,6 @@ public class TaskE {
             }
         }
 
-        //write file
-//        try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileOutput))){
-//
-//            bw.write(result);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
         System.out.println(result);
     }
 }
